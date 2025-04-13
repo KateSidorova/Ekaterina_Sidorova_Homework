@@ -78,7 +78,7 @@ class Cat extends Animal {
 
     public boolean eat(FoodBowl bowl) {
         if (bowl.getFoodAmount() > 0) {
-            bowl.eat(); // Кот пытается поесть из миски
+            bowl.eat(); 
             this.isFull = true;
             System.out.println("The cat has eaten and is full.");
             return true;
@@ -136,7 +136,6 @@ class Main {
 
         FoodBowl bowl = new FoodBowl(5);
 
-        // Создаем массив котов
         Cat[] cats = { new Cat(), new Cat(), new Cat() };
 
         for (Cat cat : cats) {
